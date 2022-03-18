@@ -4,10 +4,12 @@ import (
 	"fmt"
 )
 
-func sayHello(s string) string {
-	return "Hello " + s
+func addition(x int, y int) int {
+return x + y
 }
- 
+
 func main() {
-	fmt.Println(sayHello("George"))
+var s string = "three"
+fmt.Println(addition(1, s))
 }
+
