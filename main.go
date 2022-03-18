@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
-func addition(x int, y int) int {
-return x + y
-}
-
 func main() {
-var s string = "three"
-fmt.Println(addition(1, s))
-}
+var s string = "string"
+var i int = 10
+var f float32 = 1.2
 
+fmt.Println(reflect.TypeOf(s))
+fmt.Println(reflect.TypeOf(i))
+fmt.Println(reflect.TypeOf(f))
+}
